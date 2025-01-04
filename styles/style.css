@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    background: rgb(29, 28, 28);
+    color: #ccc;
+    font-family: sans-serif;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Inicio Reset General */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+section,
+article,
+p {
+    margin: 0;
+}
+
+/* Fin Reset General */
+
+/* Inicio Header */
+
+.header {
+    box-sizing: border-box;
+    margin: 0;
+    background: #252525;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 70px;
+    position: fixed;
+    width: 100%;
+}
+
+.header-title {
+    margin: 0;
+    color: #ccc;
+}
+
+.navbar {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.navbar-links {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.navbar-links:hover {
+    text-decoration: underline;
+}
+
+/* Fin Header */
+
+/* Inicio Main */
+
+.main {
+    padding-top: 69px;
+}
+
+/* Inicio Burbuja Instagram */
+
+.container-profile-instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.instagram-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.container-profile-instagram-title {
+    font-size: 15px;
+    text-decoration: none;
+    color: #ccc;
+}
+
+.container-profile-instagram-title:hover {
+    text-decoration: underline;
+}
+
+/* Fin Burbuja Instagram */
+
+/* Inicio Hero */
+
+.hero {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-title {
+    font-size: 25px;
+    border-bottom: 3px solid #48e;
+    text-align: center;
+}
+
+.hero-description {
+    text-align: center;
+    max-width: 700px;
+    font-size: 20px;
+}
+
+.hero-link {
+    text-decoration: none;
+    background: #48e;
+    color: #eee;
+    padding: 15px 18px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: .1s outline;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.hero-link:hover {
+    outline: 3px solid #48c;
+}
+
+/* Fin Hero */
+
+
+/* Fin Main */
