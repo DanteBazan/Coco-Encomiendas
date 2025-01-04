@@ -1,42 +1,35 @@
+/* Inicio Reset General */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Fin Reset General */
+
 body {
     margin: 0;
     background: rgb(29, 28, 28);
     color: #ccc;
     font-family: sans-serif;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
 }
 
-/* Inicio Reset General */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-img,
-section,
-article,
-p {
-    margin: 0;
-}
-
-/* Fin Reset General */
 
 /* Inicio Header */
 
 .header {
-    box-sizing: border-box;
     margin: 0;
-    background: #252525;
+    background: #272626;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 70px;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 100;
 }
 
 .header-title {
@@ -54,6 +47,7 @@ p {
 .navbar-links {
     text-decoration: none;
     color: #ccc;
+    font-size: 19px;
 }
 
 .navbar-links:hover {
@@ -65,19 +59,23 @@ p {
 /* Inicio Main */
 
 .main {
-    padding-top: 69px;
+    margin-top: 140px;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 /* Inicio Burbuja Instagram */
 
 .container-profile-instagram {
+    position: sticky;
+    bottom: 0;
+    right: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
 }
 
 .instagram-logo {
@@ -102,41 +100,102 @@ p {
 .hero {
     margin: 5rem;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    /* background: red; */
+    padding: 10px;
+}
+
+.hero-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
 }
 
 .hero-title {
     font-size: 25px;
     border-bottom: 3px solid #48e;
-    text-align: center;
 }
 
-.hero-description {
-    text-align: center;
+.hero-parraf {
     max-width: 700px;
     font-size: 20px;
 }
 
 .hero-link {
     text-decoration: none;
-    background: #48e;
+    outline: 3px solid #48e;
     color: #eee;
     padding: 15px 18px;
     cursor: pointer;
     border-radius: 3px;
-    transition: .1s outline;
+    transition: .7s background;
     font-family: sans-serif;
     font-size: 20px;
 }
 
 .hero-link:hover {
-    outline: 3px solid #48c;
+    background: #48e;
+}
+
+.hero-gift {
+    max-width: 400px;
 }
 
 /* Fin Hero */
+
+/* Inicio Mis Servicios */
+
+.my-services {
+    margin: 5rem;
+}
+
+.container-services-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-services-title {
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 3px solid #48e;
+}
+
+.container-list-services {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+    margin: 50px;
+}
+
+.list-services-title {
+    font-size: 23px;
+}
+
+.list-all-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 19px;
+}
+
+.list-title {
+    border-bottom: 2px solid #48e;
+    font-size: 17px;
+}
+
+
+/* Fin Mis Servicios */
+
 
 
 /* Fin Main */
